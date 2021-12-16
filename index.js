@@ -20,6 +20,7 @@ if (!Element.prototype.setAttributesDOM) {
     try {
       //code goes here
       Object.keys(json).forEach(function (attr) {
+        console.log(this);
         this.setAttribute(attr, json[attr]);
       });
     } catch (err) {
@@ -27,7 +28,6 @@ if (!Element.prototype.setAttributesDOM) {
     }
   };
 }
-
 appDiv.setAttributesDOM({
   'data-link': 'remove',
   'data-time': 'DateTime',
