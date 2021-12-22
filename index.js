@@ -34,3 +34,5 @@ appDiv.setAttributesDOM({
   'data-username': 'user',
   ohref: 'ohref',
 });
+var str = "\u6f22\u5b57"; // "\u6f22\u5b57" === "漢字"
+alert(str.hexEncode().hexDecode());
